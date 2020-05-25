@@ -1,38 +1,82 @@
-.App {
+  
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background: lightsalmon;
+}
+.header{
   text-align: center;
+  color: darkred;
+  font-family: cursive;
+  margin-top: 1.5rem;
+  text-transform: uppercase;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.quote-box {
+  background: #fff;
+  width: 40rem;
+  margin: 4rem auto;
+  padding: 3rem;
+  border-radius: 5px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.quote {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.author {
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 1.2rem;
+}
+
+.buttons {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  margin-top: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+
+.social-media {
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.social-media > a {
+  margin-right: .5rem;
+  background: #0059ff;
+  padding: .3rem .5rem;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.social-media > a:hover {
+  opacity: .9;
+}
+
+.social-media > a img {
+  width: 1.5rem;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+
+.button-quote {
+  background: lightsalmon;
+  border: none;
+  color: darkred;
+  padding: .7rem 1rem;
+  font-size: .9rem;
+  font-weight: bold;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.button-quote:hover {
+  opacity: 0.9;
 }
